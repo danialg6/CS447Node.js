@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Danial's shopping website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class ="container" id ="log-div" >
+<form id ="login-form">
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary" id="login-btn">Submit</button>
+</form>
+<div id = "error-msg"class ="warning"></div>
+</div>
+
+
+    <div class="container" id = "product-container">
+        
+        <div>
+            <button id ="logout-btn">Logout</button>
+            <h1>Books List</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">PublishedDate</th>
+                <th scope="col">Author</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="product-lits">
+
+            </tbody>
+          </table>
+        </div>
+        <h1 id="add-forms">Add a Books</h1>
+        <form id="idfrom">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+            <div class="mb-3">
+                <label for="ISBN" class="form-label">ISBN</label>
+                <input type="text" class="form-control" id="ISBN">
+            </div>
+            <div class="mb-3">
+                <label for="publishedDate" class="form-label">PublishedDate</label>
+                <input type="text" class="form-control" id="publishedDate">
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" class="form-control" id="author">
+            </div>
+            <button type="submit" class="btn btn-primary" id="addBtn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
