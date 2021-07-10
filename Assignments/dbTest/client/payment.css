@@ -1,0 +1,14 @@
+.payment{
+    display: none;
+    /* display: flex; */
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.bank_account_class{
+    background-color: azure;
+    display: none;
+    /* display: flex; */
+    margin-top: 60px;
+    margin-left: 100px; 
+    margin-right: 200px;
+}
